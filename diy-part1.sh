@@ -79,7 +79,7 @@ git clone --depth=1 -b master https://github.com/jerrykuku/luci-theme-argon pack
 git clone --depth=1 https://github.com/jerrykuku/luci-app-argon-config package/luci-app-argon-config
 
 # 拉取 immortalwrt master 源码
-git clone -b master https://github.com/immortalwrt/immortalwrt.git iwrt
+git clone -b openwrt-23.05 https://github.com/immortalwrt/immortalwrt.git iwrt
 # 提取 fullconenat-nft 源码
 cp -rf iwrt/package/network/utils/fullconenat-nft package/network/utils/fullconenat-nft
 # 提取 fullconenat 源码
