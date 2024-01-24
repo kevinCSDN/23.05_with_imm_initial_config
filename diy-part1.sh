@@ -8,7 +8,12 @@
 # https://github.com/P3TERX/Actions-OpenWrt
 # File name: diy-part1.sh
 # Description: OpenWrt DIY script part 1 (Before Update feeds)
-#
+
+# 查看所有标签
+#git tag
+# 切换到标签v23.05.2
+git checkout v23.05.2
+
 #问题：git clone -b master https://github.com/sirpdboy/luci-theme-kucat.git和
 #      git clone --depth=1 -b master https://github.com/sirpdboy/luci-theme-kucat  的效果一样吗？
 #回答：两个命令都是用于克隆Git仓库的，有一些细微的差别：
