@@ -55,21 +55,6 @@ git checkout v23.05.2
 #cp -r openwrt-packages/{luci-app-vssr,lua-maxminddb,helloworld} package/
 #rm -rf openwrt-packages
 
-# 删除自带 hysteria 源码
-rm -rf feeds/packages/net/hysteria
-rm -rf package/feeds/packages/hysteria
-
-# 删除自带 gn 源码
-rm -rf feeds/packages/devel/gn
-rm -rf package/feeds/packages/gn
-
-# 删除自带 v2ray-geodata 源码
-rm -rf feeds/packages/net/v2ray-geodata
-rm -rf package/feeds/packages/v2ray-geodata
-
-# 删除自带 xray-core 源码
-rm -rf feeds/packages/net/xray-core
-rm -rf package/feeds/packages/xray-core
 
 git clone https://github.com/kiddin9/openwrt-packages
 shopt -s extglob
@@ -83,14 +68,6 @@ rm -rf openwrt-packages
 #cp -r luci1/applications/luci-app-autoreboot package/
 #rm -rf luci1
 
-
-#删除feeds自带mosdns、v2ray-geodata
-rm -rf ./feeds/packages/net/mosdns
-rm -rf feeds/packages/net/v2ray-geodata
-rm -rf feeds/luci/themes/luci-theme-argon
-rm -rf feeds/luci/themes/luci-theme-Bootstrap
-rm -rf feeds/luci/themes/luci-theme-BootstrapDark
-rm -rf feeds/luci/themes/luci-theme-BootstrapLight
 
 cd package
 git clone https://github.com/f8q8/luci-app-autoreboot.git
