@@ -94,6 +94,7 @@ rm -rf iwrt
 
 #克隆passwall环境插件
 git clone https://github.com/xiaorouji/openwrt-passwall-packages.git package/pwpage
+sed -i 's/1.8.7/1.8.6/g' package/pwpage/openwrt-passwall-packages/xray-plugin/Makefile   # 修改默认ip
 
 #克隆的源码放在small文件夹,预先建立small文件夹
 mkdir package/small
